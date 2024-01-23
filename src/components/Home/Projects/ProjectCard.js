@@ -5,7 +5,7 @@ const ProjectCard = ({ project }) => {
   return (
     <Fragment>
       <div className="project-card">
-        <h6>{project.title}</h6>
+        <a href={project.link}>{project.title}</a>
         <div className="project-duration">{project.date}</div>
         <ul>
           {project.description.map((des, index) => (

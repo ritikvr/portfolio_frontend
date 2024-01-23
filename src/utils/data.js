@@ -64,6 +64,7 @@ export const SKILLS = [
 export const PROJECTS = [
   {
     title: "GenieBazaar",
+    link: "https://genie-bazaar-frontend.vercel.app",
     date: "December 2023 - January 2024",
     description: [
       "GenieBazaar emerges as a comprehensive solution for online retail, blending functionality, design, and security to create a compelling e-commerce platform.",
@@ -75,6 +76,7 @@ export const PROJECTS = [
   },
   {
     title: "Chat-Application",
+    link: "https://chatnovo-frontend.vercel.app",
     date: "October 2023 - October 2023",
     description: [
       "This chat application serves as a versatile platform for seamless communication and collaboration, allowing users to engage in both individual and group chats.",
@@ -87,6 +89,7 @@ export const PROJECTS = [
   },
   {
     title: "Investment Calculator",
+    link: "",
     date: "July 2023 - July 2023",
     description: [
       "Developed an Investment Calculator using React. Implemented a user-friendly design for enhanced accessibility and ease of use.",

@@ -6,8 +6,9 @@
   min-height: 44vmax;
   margin: 0 1vmax;
 }
-.project-card > h6 {
+.project-card > a {
   font-size: 1.8vmax;
+  text-decoration: #7e793a;
   font-weight: 250;
   color: white;
   margin-bottom: 0.5vmax;
@@ -50,7 +51,7 @@
     padding: 1.5vmax;
     min-height: 53vmax;
   }
-  .project-card > h6 {
+  .project-card > a {
     font-size: 2vmax;
   }
   .project-duration {
@@ -72,7 +73,7 @@
   .project-card {
     min-height: 50vmax;
   }
-  .project-card > h6 {
+  .project-card > a {
     font-size: 2.5vmax;
     font-weight: 300;
   }
