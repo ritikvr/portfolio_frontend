@@ -1,0 +1,100 @@
+.project-card {
+  background-color: #fbeec11a;
+  border: 2px solid #4885a7;
+  border-radius: 1vmax;
+  padding: 1vmax;
+  min-height: 44vmax;
+  margin: 0 1vmax;
+}
+.project-card > h6 {
+  font-size: 1.8vmax;
+  font-weight: 250;
+  color: white;
+  margin-bottom: 0.5vmax;
+}
+.project-duration {
+  display: inline-block;
+  font-size: 1.2vmax;
+  font-weight: 200;
+  color: white;
+  padding: 0.4vmax 0.6vmax;
+  background-color: #a19b4a;
+  border-radius: 0.5vmax;
+}
+.project-card > ul {
+  padding: 1vmax;
+  padding-left: 2vmax;
+}
+.project-card > ul > li {
+  list-style: none;
+  font-size: 1.1vmax;
+  font-weight: 200;
+  color: white;
+  letter-spacing: 0.04vmax;
+  margin-bottom: 0.5vmax;
+  position: relative;
+}
+.project-card > ul > li::after {
+  content: "";
+  width: 0.5vmax;
+  height: 0.5vmax;
+  background-color: #7e793a;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.6vmax;
+  left: -1.2vmax;
+}
+
+@media screen and (max-width: 1025px) {
+  .project-card {
+    padding: 1.5vmax;
+    min-height: 53vmax;
+  }
+  .project-card > h6 {
+    font-size: 2vmax;
+  }
+  .project-duration {
+    font-size: 1.5vmax;
+    padding: 0.5vmax 0.8vmax;
+  }
+  .project-card > ul > li {
+    font-size: 1.3vmax;
+    letter-spacing: 0.07vmax;
+  }
+  .project-card > ul > li::after {
+    width: 0.6vmax;
+    height: 0.6vmax;
+    top: 0.7vmax;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project-card {
+    min-height: 50vmax;
+  }
+  .project-card > h6 {
+    font-size: 2.5vmax;
+    font-weight: 300;
+  }
+  .project-duration {
+    font-size: 2vmax;
+    padding: 0.5vmax 1vmax;
+    letter-spacing: 0.07vmax;
+  }
+  .project-card > ul > li {
+    font-size: 1.7vmax;
+    letter-spacing: 0.09vmax;
+  }
+  .project-card > ul > li::after {
+    width: 0.8vmax;
+    height: 0.8vmax;
+    top: 0.9vmax;
+    left: -1.5vmax;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .project-card {
+    min-height: 85vmax;
+  }
+}

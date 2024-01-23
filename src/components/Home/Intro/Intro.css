@@ -1,0 +1,129 @@
+.intro-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.intro-content {
+  flex: 1;
+}
+.intro-content > h1 {
+  font-size: 3vmax;
+  font-weight: 300;
+  color: white;
+}
+.intro-content > div > h3 {
+  display: inline-flex;
+  font-size: 2vmax;
+  font-weight: 300;
+  margin-right: 0.5vmax;
+  color: white;
+}
+.intro-content > div > span {
+  font-size: 2vmax;
+}
+.intro-content > p {
+  margin-top: 1vmax;
+  width: 80%;
+  font-size: 1.2vmax;
+  color: white;
+  letter-spacing: 0.07vmax;
+  font-weight: 200;
+}
+.intro-img {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vmax;
+  padding: 2vmax;
+}
+.intro-img > div {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 1vmax;
+  margin-right: auto;
+}
+.tech-icon {
+  padding: 0.5vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2vmax;
+  border: 1px solid #fbeec1;
+}
+.tech-icon > img {
+  width: 3vmax;
+  height: 3vmax;
+  border-radius: 0.2vmax;
+}
+
+@media screen and (max-width: 1025px) {
+  .intro-content {
+    padding: 1vmax;
+  }
+  .intro-content > h1 {
+    margin-left: 1vmax;
+    font-size: 3.5vmax;
+  }
+  .intro-content > div > h3 {
+    margin-left: 1vmax;
+    font-size: 2.5vmax;
+  }
+  .intro-content > div > span {
+    font-size: 2.5vmax;
+  }
+  .intro-content > p {
+    margin-left: 1vmax;
+    font-size: 1.4vmax;
+  }
+  .intro-img > div:first-child > img {
+    width: 35vmax;
+    height: 40vmax;
+  }
+  .tech-icon > img {
+    width: 4vmax;
+    height: 4vmax;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro-container {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 2vmax;
+  }
+  .intro-content > h1 {
+    margin-left: 0;
+    font-size: 4vmax;
+  }
+  .intro-content > div > h3 {
+    margin-left: 0;
+    font-size: 3vmax;
+  }
+  .intro-content > div > span {
+    font-size: 2.9vmax;
+  }
+  .intro-content > p {
+    margin-left: 0;
+    width: 100%;
+    font-size: 2vmax;
+    font-weight: 300;
+    letter-spacing: 0.1vmax;
+    text-align: justify;
+  }
+  .intro-img {
+    gap: 2vmax;
+    margin: auto;
+  }
+  .intro-img > div {
+    gap: 2vmax;
+  }
+  .tech-icon {
+    padding: 1vmax;
+  }
+  .tech-icon > img {
+    width: 5vmax;
+    height: 5vmax;
+  }
+}

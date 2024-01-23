@@ -1,0 +1,57 @@
+.contact-container {
+  margin-top: 2vmax;
+  position: relative;
+}
+.contact-container > h5 {
+  font-size: 2vmax;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 1vmax;
+}
+.contact-content {
+  display: flex;
+  gap: 2vmax;
+}
+.contact-content > div:first-child {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1vmax;
+}
+.contact-content > div:last-child {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1025px) {
+  .contact-container > h5 {
+    font-size: 2.5vmax;
+    margin-left: 1vmax;
+  }
+  .contact-content > div:first-child {
+    gap: 1.5vmax;
+    padding-left: 1vmax;
+  }
+  .contact-content > div:last-child {
+    padding-right: 1vmax;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container > h5 {
+    font-size: 3vmax;
+    font-weight: 300;
+  }
+  .contact-content {
+    flex-direction: column;
+    gap: 3vmax;
+  }
+  .contact-content > div:first-child {
+    gap: 2vmax;
+    padding: 0 1vmax;
+  }
+  .contact-content > div:last-child {
+    padding: 0 1vmax;
+  }
+}

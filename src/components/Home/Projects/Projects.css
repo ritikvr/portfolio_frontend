@@ -1,0 +1,76 @@
+.projects-container {
+  margin: 1vmax 0;
+  position: relative;
+}
+.projects-container > h5 {
+  font-size: 2vmax;
+  color: white;
+  font-weight: 300;
+  margin-bottom: 1vmax;
+}
+.arrow-right,
+.arrow-left {
+  width: 2.5vmax;
+  height: 2.5vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #4885a7;
+  border-radius: 0.5vmax;
+  color: #a19b4a;
+  background: #fbeec11a;
+  position: absolute;
+  top: 55%;
+  z-index: 2;
+  cursor: pointer;
+}
+.arrow-left {
+  left: -2vmax;
+}
+.arrow-right {
+  right: -2vmax;
+}
+.arrow-right > i,
+.arrow-left > i {
+  font-size: 2.2vmax;
+  font-weight: 100;
+}
+
+@media screen and (max-width: 1025px) {
+  .projects-container > h5 {
+    margin-left: 1vmax;
+    font-size: 2.5vmax;
+  }
+  .arrow-right,
+  .arrow-left {
+    color: white;
+    background: #a19b4a;
+  }
+  .arrow-left {
+    left: 0;
+  }
+  .arrow-right {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects-container > h5 {
+    font-size: 3vmax;
+  }
+  .arrow-right,
+  .arrow-left {
+    width: 3.5vmax;
+    height: 3.5vmax;
+  }
+  .arrow-left {
+    left: -0.5vmax;
+  }
+  .arrow-right {
+    right: -0.5vmax;
+  }
+  .arrow-right > i,
+  .arrow-left > i {
+    font-size: 2.5vmax;
+  }
+}

@@ -1,0 +1,73 @@
+.navbar {
+  background: rgba(0, 0, 0, 0.7);
+  position: sticky;
+  top: 0;
+  padding: 1vmax 0;
+  z-index: 30;
+  backdrop-filter: blur(10vmax);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar > h1 {
+  font-family: "Dancing Script", cursive;
+}
+
+.navbar > ul {
+  display: flex;
+  align-items: center;
+  gap: 2vmax;
+  list-style: none;
+}
+.navbar > ul > li > a {
+  text-decoration: none;
+  color: #fbeec1;
+  letter-spacing: 0.06vmax;
+  position: relative;
+}
+.navbar > ul > li > a::before {
+  content: "";
+  width: 0;
+  height: 0.2vmax;
+  background: linear-gradient(90deg, #7e793a 0%, #5b572a 100%);
+  border-radius: 1vmax;
+  bottom: -0.2vmax;
+  position: absolute;
+  transform: translateX(-0.5vmax);
+  transition: all 0.3s ease;
+}
+.navbar > ul > li > a:hover::before {
+  width: 100%;
+  transform: translateX(0);
+}
+
+.navbar > button {
+  padding: 0.3vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 0.1vmax;
+  color: #fbeec1;
+  background: linear-gradient(90deg, #7e793a 0%, #5b572a 100%);
+  cursor: pointer;
+  transition: all 0.5s ease;
+  display: none;
+}
+.navbar > button > i {
+  font-size: 4vmax;
+}
+.navbar > button:hover {
+  background: black;
+  border: 1px solid #fbeec1;
+}
+
+@media screen and (max-width: 770px) {
+  .navbar > ul {
+    display: none;
+  }
+  .navbar > button {
+    display: flex;
+  }
+}
